@@ -1,0 +1,22 @@
+.hero {
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.hero-top-title-left-image{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
