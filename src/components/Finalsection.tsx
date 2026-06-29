@@ -13,31 +13,31 @@ const faqData: FaqItem[] = [
     },
     {
         question: "What are the key dates for application?",
-        answer: "The application process typically opens at the beginning of each academic semester. Please check our official website or social media channels for the most up-to-date information on application deadlines and important dates."
+        answer: "The application for 2026 is now open! The deadline is on February 27, 2026."
     },
     {
         question: "Who can participate?",
-        answer: "The program is open to undergraduate students from various disciplines including computer science, engineering, design, and business. Students should be in at least their second year of study and have a strong interest in technology and innovation."
+        answer: "One must be an undergraduate student from Nepal who wants to grow their career in technology or is enrolled in a similar degree."
     },
     {
         question: "What are the traits we value?",
-        answer: "We value curiosity, initiative, collaboration, and a growth mindset. We look for students who are passionate about learning, willing to take on challenges, and eager to contribute to real-world projects."
+        answer: "Embracing openness, Active engagement, Solution oriented, Team work, Pursuit of excellence"
     },
     {
         question: "What is the cost of participation?",
-        answer: "The Student Partnership Program is completely free to participate in. There are no fees or costs associated with joining the program."
+        answer: "There is no cost in joining this program."
     },
     {
         question: "Is there any compensation?",
-        answer: "Yes, participants receive compensation for their contributions during the program. The specific details are shared during the onboarding process."
+        answer: "As a part of the Leapfrog Student Partnership Program, you will get professional exposure as well as various tech and non-tech training opportunities to enhance your skill."
     },
     {
         question: "How much time do I have to commit?",
-        answer: "We expect participants to commit around 10-15 hours per week to the program activities, projects, and learning sessions. The schedule is designed to be flexible enough to accommodate academic commitments."
+        answer: "The program requires a commitment of two sessions per month, each approximately 2–3 hours long. This includes one on-site monthly meetup and one virtual session. Applicants must attend all sessions, be present on-site for the monthly meetups, and organize KSS in their colleges or communities."
     },
     {
         question: "What happens at the end of the program?",
-        answer: "At the end of the program, participants receive a certificate of completion, performance evaluation, and potential opportunities for further collaboration or full-time positions based on performance and availability."
+        answer: "The program concludes with a Graduation Day celebration, where participants receive a certificate of completion, an experience letter, and some cool SWAGs to acknowledge their journey and achievements."
     },
     {
         question: "How does the selection process work?",
