@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../assets/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('../assets/ClashDisplay-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MarkOT';
+    src: url('../assets/MarkOT.woff2') format('woff2'),
+         url('../assets/MarkOT-Bold.woff2') format('woff2'),
+         url('../assets/MarkOT-Medium.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.final-section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #f5a623;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.faq-item {
+    background-color: #e8eef7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item.active {
+    background-color: #e8eef7;
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-header:hover {
+    background-color: #dde5f2;
+}
+
+.faq-question {
+    font-family: 'MarkOT', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin: 0;
+    flex: 1;
+}
+
+.faq-chevron {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #1a3c34;
+}
+
+.faq-item.active .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item.active .faq-answer-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer-inner {
+    overflow: hidden;
+}
+
+.faq-answer {
+    padding: 0 28px 20px 28px;
+    font-family: 'MarkOT', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #333;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .final-section {
+        padding: 40px 20px;
+    }
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-header {
+        padding: 16px 20px;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 20px 16px 20px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/ClashDisplay-Bold.ttf') format('truetype'),
+       url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mentors {
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.mentors-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #1a7a3a;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.mentors-description {
+  font-family: 'MarkOT', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mentor-card {
+  position: relative;
+  background-color: #e8f5e9;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  min-height: 323px;
+  overflow: visible;
+  transition: transform 0.3s ease, z-index 0s;
+  z-index: 1;
+}
+
+.mentor-card:hover {
+  transform: scaleY(1.15);
+  z-index: 10;
+}
+
+.mentor-card-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #d4e8d4;
+}
+
+.mentor-placeholder-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #a8d5ba 0%, #7bc47f 100%);
+}
+
+.mentor-card-name {
+  font-family: 'MarkOT', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.mentor-card-title {
+  font-family: 'MarkOT', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+
+.mentor-card:hover .mentor-overlay {
+  display: block;
+  opacity: 1;
+}
+
+.mentor-overlay {
+  background: #169948;
+  padding: 32px 28px;
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  color: #fff;
+  display: none;
+  opacity: 0;
+  z-index: 3;
+  text-align: left;
+}
+
+.mentor-overlay-name {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mentor-overlay-title {
+  font-family: 'MarkOT', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .mentors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mentors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mentors-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mentors {
+    padding: 60px 20px;
+  }
+}

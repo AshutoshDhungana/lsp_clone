@@ -1,0 +1,123 @@
+.section1 {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Clash Display';
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.perks-title {
+  color: #e85d26;
+}
+
+.contribution-title {
+  color: #2b3990;
+}
+
+.perks,
+.contribution {
+  margin-bottom: 60px;
+}
+
+.perks-cards,
+.contribution-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.perk-card {
+  background-color: #fef0eb;
+}
+
+.contribution-card {
+  background-color: #e8eaf6;
+}
+
+.card-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.orange-icon {
+  background-color: #e85d26;
+  color: white;
+}
+
+.blue-icon {
+  background-color: #2b3990;
+  color: white;
+}
+
+.card-title {
+    font-family: 'MarkOT';
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.card-points {
+    font-family: 'MarkOT';
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-points li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.card-points li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  font-size: 0.6rem;
+  top: 4px;
+}
+
+.perk-card .card-points li::before {
+  color: #e85d26;
+}
+
+.contribution-card .card-points li::before {
+  color: #2b3990;
+}
+
+@font-face {
+    font-family: 'MarkOT';
+    src: url('../assets/MarkOT.woff2') format('woff2'),
+         url('../assets/MarkOT-Bold.woff2') format('woff2'),
+         url('../assets/MarkOT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../assets/ClashDisplay-Bold.ttf') format('ttf'),
+         url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

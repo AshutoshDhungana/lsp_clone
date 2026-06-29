@@ -1,0 +1,95 @@
+.section2 {
+  background-color: #fdf5e6;
+  padding: 60px 40px;
+}
+
+.section2-title {
+  font-family: 'Clash Display';
+  text-align: center;
+  font-size: 2.875rem;
+  font-weight: 600;
+  color: #085675;
+  margin-bottom: 50px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+}
+
+.stat-icon {
+  font-size: 3rem; 
+  margin-bottom: 15px;
+}
+
+.stat-number {
+  font-family: 'MarkOT';
+  font-size: 58px;
+  font-weight: bold;
+  color: #085675;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-family: 'MarkOT';
+  font-size: 1rem;
+  color: #444;
+  max-width: 180px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../assets/MarkOT.woff2') format('woff2'),
+       url('../assets/MarkOT-Bold.woff2') format('woff2'),
+       url('../assets/MarkOT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/ClashDisplay-Bold.ttf') format('ttf'),
+       url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    gap: 40px;
+  }
+
+  .stat-item {
+    min-width: 140px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .section2-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

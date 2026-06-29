@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/ClashDisplay-Bold.ttf') format('truetype'),
+       url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../assets/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.student-partners {
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.stdpart-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #1a7a3a;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.stdpart-description {
+  font-family: 'MarkOT', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.stdpart-year-filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.stdpart-year-btn {
+  padding: 10px 24px;
+  border: 2px solid #ccc;
+  border-radius: 24px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stdpart-year-btn:hover {
+  border-color: #1a7a3a;
+  color: #1a7a3a;
+}
+
+.stdpart-year-btn.active {
+  border-color: #333;
+  background: #fff;
+  color: #111;
+}
+
+.stdpart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stdpart-card {
+  position: relative;
+  background-color: #e8f5e9;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  min-height: 323px;
+  overflow: visible;
+  transition: transform 0.3s ease, z-index 0s;
+  z-index: 1;
+}
+
+.stdpart-card:hover {
+  transform: scaleY(1.15);
+  z-index: 10;
+}
+
+.stdpart-card-image {
+  width: 220px;
+  height: 220px;
+
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background-color: #d4e8d4;
+}
+
+.stdpart-card-name {
+  font-family: 'MarkOT', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.stdpart-card-college {
+  font-family: 'MarkOT', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+
+.stdpart-card:hover .card__overlay {
+    display: block;
+    opacity: 1;
+}
+
+.card__overlay {
+    background: #169948;
+    padding: 32px 28px;
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    color: #fff;
+    display: none;
+    opacity: 0;
+    z-index: 3;
+    text-align: left;
+
+}
+
+.card__overlay-name {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card__overlay-college {
+    font-family: 'MarkOT', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.card__overlay-desc {
+    font-family: 'MarkOT', sans-serif;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.card__overlay-linkedin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.card__overlay-linkedin:hover {
+    background: #e0e0e0;
+}
+
+.card__overlay-linkedin svg {
+    width: 18px;
+    height: 18px;
+    fill: #169948;
+}
+
+
+@media (max-width: 1024px) {
+  .stdpart-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stdpart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stdpart-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stdpart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stdpart-year-filters {
+    flex-wrap: wrap;
+  }
+
+  .student-partners {
+    padding: 60px 20px;
+  }
+}

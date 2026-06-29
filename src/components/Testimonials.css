@@ -1,0 +1,106 @@
+.testimonials {
+    background-color: #fdf5e6;
+    padding: 80px 80px 60px;
+    text-align: center;
+}
+
+.testimonials-title {
+    font-family: "Clash Display";
+    font-size: 42px;
+    font-weight: 700;
+    color: #0d4d4d;
+    margin: 0 0 50px;
+    line-height: 1.2;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    text-align: left;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-image-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    font-family: "MarkOT";
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.testimonial-name {
+    font-family: "Clash Display";
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d4d4d;
+    margin: 0 0 4px;
+}
+
+.testimonial-batch {
+    font-family: "MarkOT";
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.testimonials-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0d4d4d;
+    opacity: 0.3;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.dot:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+    .testimonials {
+        padding: 60px 30px 40px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .testimonials-title {
+        font-size: 32px;
+    }
+}
